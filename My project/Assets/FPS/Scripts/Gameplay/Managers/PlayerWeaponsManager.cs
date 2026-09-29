@@ -1,11 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using NUnit.Framework;
+using System.Collections.Generic;
 using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.Events;
 
+
+
+
+
 namespace Unity.FPS.Gameplay
 {
     [RequireComponent(typeof(PlayerInputHandler))]
+
+    public class WeaponDataSave
+    {
+
+        public List weaponIDs = new List();
+        public int activeWeaponIndex = -1;
+    }
     public class PlayerWeaponsManager : MonoBehaviour
     {
         public enum WeaponSwitchState

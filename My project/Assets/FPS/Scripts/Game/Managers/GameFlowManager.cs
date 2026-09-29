@@ -56,7 +56,24 @@ namespace Unity.FPS.Game
                 // See if it's time to load the end scene (after the delay)
                 if (Time.time >= m_TimeLoadEndGameScene)
                 {
-                    SceneManager.LoadScene(m_SceneToLoad);
+                    GameObject managerObj = GameObject.Find("Scene_Manager");
+
+                    if (managerObj != null)
+                    {
+                        if (m_SceneToLoad == WinSceneName)
+                        {
+                            managerObj.SendMessage("LoadNextLevel", SendMessageOptions.DontRequireReceiver);
+                        }
+                        else
+                        {
+                            managerObj.SendMessage("LoadDeathMenu", SendMessageOptions.DontRequireReceiver);
+                        }
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene(m_SceneToLoad);
+                    }
+                        
                     GameIsEnding = false;
                 }
             }

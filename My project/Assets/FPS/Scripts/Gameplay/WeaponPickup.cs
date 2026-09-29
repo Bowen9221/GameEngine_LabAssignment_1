@@ -1,13 +1,15 @@
 ﻿using Unity.FPS.Game;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Unity.FPS.Gameplay
 {
+
     public class WeaponPickup : Pickup
     {
         [Tooltip("The prefab for the weapon that will be added to the player on pickup")]
         public WeaponController WeaponPrefab;
-
+        [SerializeField] private bool _isShotgun;
         protected override void Start()
         {
             base.Start();
@@ -27,6 +29,15 @@ namespace Unity.FPS.Gameplay
             {
                 if (playerWeaponsManager.AddWeapon(WeaponPrefab))
                 {
+                    if (_isShotgun)
+                    {
+                        Scene_Manager.Instance.HasShotgun = true;
+                    }
+                    else
+                    {
+                        Scene_Manager.Instance.HasLauncher = true;
+                    }
+
                     // Handle auto-switching to weapon if no weapons currently
                     if (playerWeaponsManager.GetActiveWeapon() == null)
                     {
