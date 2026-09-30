@@ -8,7 +8,7 @@ Project Diagram (Singleton): ![alt text](image.png)
 - What element of your game adopts the chosen pattern?
     - Handling scene transitions between levels while retaining all data through one instance starting from Runtime.
 
-Why is this pattern a good choice for the associated functionality?
+- Why is this pattern a good choice for the associated functionality?
     - A Singleton is perfect for managing scene changing between requests as it allows for more simplicity when changing scenes and lets the game function without worrying about which scene to transition to.
         - For example, heading to main Menu from any point requires a simple method call. Scene_Manager.Instance.LoadMainMenu();
         - Or loading the next level. Simply call Scene_Manager.Instance.LoadNextLevel(); All of the calculations and wrapping is done within the Scene_Manager(Singleton) script.
