@@ -20,3 +20,10 @@ External Assets
     - Unity Technologies. FPS Microgame. Version 2.0.0, Unity Asset Store, 2020, assetstore.unity.com/packages/templates/fps-microgame-163276.
        
         *The Asset Store link doesn't work and I can't find any other reference links to the project. They are template downloads within the Unity Hub Launcher*
+
+Links to scripts
+- Scene_Manager
+    - https://github.com/Bowen9221/GameEngine_LabAssignment_1/blob/main/My%20project/Assets/FPS/Scripts/Gameplay/Scene_Manager.cs
+
+- Singleton
+    - https://github.com/Bowen9221/GameEngine_LabAssignment_1/blob/main/My%20project/Assets/FPS/Scripts/Gameplay/Singleton.cs
