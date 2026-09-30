@@ -47,6 +47,8 @@ namespace Unity.FPS.Gameplay {
         {
             int totalScenes = SceneManager.sceneCountInBuildSettings;
             int nextScene = _currentScene + 1;
+
+            Debug.Log(nextScene);
             
 
             if (nextScene >= totalScenes - 1)
@@ -60,6 +62,7 @@ namespace Unity.FPS.Gameplay {
 
         public void LoadDeathMenu()
         {
+            _currentScene = 5;
             SceneManager.LoadScene("LoseScene");
         }
 

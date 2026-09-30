@@ -66,7 +66,7 @@ namespace Unity.FPS.Game
                         }
                         else
                         {
-                            managerObj.SendMessage("LoadDeathMenu", SendMessageOptions.DontRequireReceiver);
+                            managerObj.SendMessage("ReloadLevel", SendMessageOptions.DontRequireReceiver);
                         }
                     }
                     else
