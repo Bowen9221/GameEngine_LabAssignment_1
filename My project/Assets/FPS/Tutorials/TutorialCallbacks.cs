@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using Unity.Tutorials.Core.Editor;
+
 using UnityEditor;
 using UnityEngine.AI;
 using Unity.AI.Navigation;
@@ -11,8 +11,8 @@ namespace Unity.Tutorials
     /// </summary>
     public class TutorialCallbacks : ScriptableObject
     {
-        public FutureObjectReference futureRoomInstance = default;
-        public FutureObjectReference futureBotInstance = default;
+        public Unity.Tutorials.Editor.FutureObjectReference futureRoomInstance = default;
+        public Unity.Tutorials.Editor.FutureObjectReference futureBotInstance = default;
         NavMeshSurface navMeshSurface = default;
 
         public bool NavMeshIsBuilt()
@@ -52,7 +52,7 @@ namespace Unity.Tutorials
         /// Selects a GameObject in the scene, marking it as the active object for selection
         /// </summary>
         /// <param name="futureObjectReference"></param>
-        public void SelectSpawnedGameObject(FutureObjectReference futureObjectReference)
+        public void SelectSpawnedGameObject(Unity.Tutorials.Editor.FutureObjectReference futureObjectReference)
         {
             if (futureObjectReference.SceneObjectReference == null) { return; }
             Selection.activeObject = futureObjectReference.SceneObjectReference.ReferencedObjectAsGameObject;
@@ -68,9 +68,9 @@ namespace Unity.Tutorials
             Tools.current = Tool.Rotate;
         }
 
-        public void StartTutorial(Tutorial tutorial)
+        public void StartTutorial(Unity.Tutorials.Editor.Tutorial tutorial)
         {
-            TutorialWindowUtils.StartTutorial(tutorial);
+            Unity.Tutorials.Editor.TutorialWindowUtils.StartTutorial(tutorial);
         }
     }
 }

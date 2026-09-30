@@ -12,105 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff771ccdf4150419d9ff4d342b069aae, type: 3}
   m_Name: 05-Other-Materials - delete
   m_EditorClassIdentifier: 
-  m_Paragraphs:
-    m_Items:
-    - m_Type: 7
-      Title:
-        m_Untranslated: 
-      Text:
-        m_Untranslated: 
-      m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
-      m_Video: {fileID: 32900000, guid: fbc1259bdf8db429a911dc146b3bd2d5, type: 3}
-      m_CriteriaCompletion: 0
-      m_Criteria:
-        m_Items: []
-      m_MaskingSettings:
-        m_MaskingEnabled: 1
-        m_UnmaskedViews:
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: 
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.ProjectBrowser, UnityEditor, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 1
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: 
-      m_InstructionText: 
-      m_TutorialButtonText: 
-    - m_Type: 0
-      Title:
-        m_Untranslated: 
-      Text:
-        m_Untranslated: 
-      m_Tutorial: {fileID: 0}
-      m_Image: {fileID: 0}
-      m_Video: {fileID: 0}
-      m_CriteriaCompletion: 0
-      m_Criteria:
-        m_Items: []
-      m_MaskingSettings:
-        m_MaskingEnabled: 0
-        m_UnmaskedViews:
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: 
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.ProjectBrowser, UnityEditor, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 0
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: 
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.InspectorWindow, UnityEditor, Version=0.0.0.0,
-              Culture=neutral, PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 0
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: 
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.ColorPicker, UnityEditor, Version=0.0.0.0, Culture=neutral,
-              PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 0
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-        - m_SelectorType: 1
-          m_ViewType:
-            m_TypeName: 
-          m_EditorWindowType:
-            m_TypeName: UnityEditor.SceneView, UnityEditor, Version=0.0.0.0, Culture=neutral,
-              PublicKeyToken=null
-          m_AlternateEditorWindowTypes:
-            m_Items: []
-          m_MaskType: 1
-          m_MaskSizeModifier: 0
-          m_UnmaskedControls: []
-      m_Summary: 
-      m_Description: 
-      m_InstructionBoxTitle: "<b><size=14>Other Level Materials</size></b>\n\nInterested
-        in changing more than just the color of the floor? Try changing the other
-        materials in the <b>Art > Materials > Level</b> folder in the Project Window.\n\nGo
-        ahead and have some fun making changes, then make sure to play your modified
-        game. \n\nClick <b>Next</b> when you are ready to move on."
-      m_InstructionText: 
-      m_TutorialButtonText: 
+  <IndexInTutorial>k__BackingField: 0
+  Title:
+    m_Untranslated: 
+  m_LegacyParagraphs:
+    m_Items: []
+  m_PageParagraphs:
+  - {fileID: 5441754932354491450}
   m_CameraSettings:
     m_CameraMode: 0
     m_FocusMode: 0
@@ -132,6 +40,7 @@ MonoBehaviour:
   DoneButton:
     m_Untranslated: Done
   m_CompletedSound: {fileID: 8300000, guid: 93fbb109633e844259ea828442bda0cb, type: 3}
+  m_FaqEntries: []
   m_AutoAdvance: 0
   Showing:
     m_PersistentCalls:
@@ -165,3 +74,37 @@ MonoBehaviour:
       m_Calls: []
   m_NextButton: 
   m_DoneButton: 
+--- !u!114 &5441754932354491450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b43af98cf241a48618341008f648cb, type: 3}
+  m_Name: MediaParagraph
+  m_EditorClassIdentifier: Unity.Tutorials.Editor::Unity.Tutorials.Editor.Paragraphs.MediaParagraph
+  m_MaskingSettings:
+    m_MaskingEnabled: 1
+    m_UnmaskedViews:
+    - m_SelectorType: 1
+      m_ViewType:
+        m_TypeName: 
+      m_OpenAndFocus: 0
+      m_EditorWindowType:
+        m_TypeName: UnityEditor.ProjectBrowser, UnityEditor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      m_AlternateEditorWindowTypes:
+        m_Items: []
+      m_MaskType: 1
+      m_MaskSizeModifier: 0
+      m_UnmaskedControls: []
+    MaskPreset: {fileID: 0}
+  Media:
+    m_ContentType: 1
+    m_Image: {fileID: 0}
+    m_VideoClip: {fileID: 32900000, guid: fbc1259bdf8db429a911dc146b3bd2d5, type: 3}
+    m_Url: 
+    m_AutoStart: 1
+    m_Loop: 1

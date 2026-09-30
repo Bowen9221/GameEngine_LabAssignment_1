@@ -1,5 +1,4 @@
-﻿using NUnit.Framework;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Unity.FPS.Game;
 using UnityEngine;
 using UnityEngine.Events;
@@ -15,7 +14,6 @@ namespace Unity.FPS.Gameplay
     public class WeaponDataSave
     {
 
-        public List weaponIDs = new List();
         public int activeWeaponIndex = -1;
     }
     public class PlayerWeaponsManager : MonoBehaviour
@@ -117,7 +115,7 @@ namespace Unity.FPS.Gameplay
             m_PlayerCharacterController = GetComponent<PlayerCharacterController>();
             DebugUtility.HandleErrorIfNullGetComponent<PlayerCharacterController, PlayerWeaponsManager>(
                 m_PlayerCharacterController, this, gameObject);
-
+            
             SetFov(DefaultFov);
 
             OnSwitchedToWeapon += OnWeaponSwitched;
